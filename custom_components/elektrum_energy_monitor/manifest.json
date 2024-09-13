@@ -1,0 +1,11 @@
+{
+    "domain": "elektrum_energy_monitor",
+    "name": "Elektrum Energy Monitor",
+    "version": "1.0.0",
+    "documentation": "https://github.com/emalihin/elektrum_energy_monitor",
+    "requirements": ["requests", "voluptuous"],
+    "codeowners": ["@emalihin"],
+    "iot_class": "cloud_polling",
+    "config_flow": true
+  }
+  
