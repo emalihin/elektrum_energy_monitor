@@ -127,7 +127,7 @@ class ElektrumEnergyMonitorSensor(SensorEntity):
     def get_auth_token(self, session):
         """Retrieve the authentication token needed for logging in."""
         headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:77.0) Gecko/20100101 Firefox/77.0",
+            "User-Agent": "home-assistant",
         }
         r1 = session.get(AUTH_URL, headers=headers, allow_redirects=True)
         if r1.status_code == 200:
