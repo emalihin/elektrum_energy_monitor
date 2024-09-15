@@ -74,7 +74,7 @@ class ElektrumEnergyMonitorSensor(SensorEntity):
         """Return the unique ID of the sensor."""
         return self._unique_id
 
-    def update(self):
+    def update(self, *args, **kwargs):
         """Update the sensor by querying Elektrum's API and processing hourly data for yesterday."""
         session = requests.Session()
 
